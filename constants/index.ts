@@ -27,40 +27,4 @@ export const navItems = [
   },
 ];
 
-//footer
-export const FOOTER_LINKS = [
-  {
-    title: 'Learn More',
-    links: [
-      'About Hilink',
-      'Press Releases',
-      'Environment',
-      'Jobs',
-      'Privacy Policy',
-      'Contact Us',
-    ],
-  },
-  {
-    title: 'Our Community',
-    links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
-  },
-];
 
-export const FOOTER_CONTACT_INFO = {
-  title: 'Contact Us',
-  links: [
-    { label: 'Admin Officer', value: '+91-*********' },
-    { label: 'Email Officer', value: 'tejasviraj8686@gmail.com' },
-  ],
-};
-
-export const SOCIALS = {
-  title: 'Social',
-  links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
-  ],
-};
