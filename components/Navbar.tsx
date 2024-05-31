@@ -1,38 +1,10 @@
-"use client";
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "@/public/assets/logo.svg";
-import { Button } from "./ui/button";
-
-const navItems = [
-  {
-    href: "/",
-    text: "Home",
-    className:
-      "block py-2 px-3 text-base text-white bg-[#FF5555] rounded md:bg-transparent md:text-[#FF5555] md:p-0 md:dark:text-red-500 font-bold",
-    ariaCurrent: "page",
-  },
-  {
-    href: "/",
-    text: "About Us",
-    className:
-      "block py-2 px-3 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF5555] md:p-0 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold",
-  },
-  {
-    href: "/",
-    text: "Services",
-    className:
-      "block py-2 px-3 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF5555] md:p-0 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold",
-  },
-  {
-    href: "/",
-    text: "Contact",
-    className:
-      "block py-2 px-3 text-base text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FF5555] md:p-0 md:dark:hover:text-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-bold",
-  },
-];
+import { navItems } from "@/constants/index"; 
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +21,7 @@ const Navbar: React.FC = () => {
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <Image src={Logo} alt="Flowbite Logo" height={38} width={120} />
+            <Image src={Logo} alt="Flowbite Logo" height={38} width={120} loading="lazy" />
           </Link>
           <ul className="hidden md:flex space-x-8 rtl:space-x-reverse">
             {navItems.map((item, index) => (
@@ -57,7 +29,9 @@ const Navbar: React.FC = () => {
                 <Link
                   href={item.href}
                   className={item.className}
-                  aria-current={item.ariaCurrent ? item.ariaCurrent : undefined}
+                  aria-current={
+                    item.ariaCurrent === undefined ? undefined : "page"
+                  }
                 >
                   {item.text}
                 </Link>
@@ -67,12 +41,12 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
           <ThemeSwitcher />
-          <Button
+          <button
             type="button"
-            className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
+            className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
           >
-           Download
-          </Button>
+            Download
+          </button>
         </div>
         <button
           data-collapse-toggle="navbar-sticky"
@@ -110,7 +84,9 @@ const Navbar: React.FC = () => {
               <Link
                 href={item.href}
                 className={item.className}
-                aria-current={item.ariaCurrent ? item.ariaCurrent : undefined}
+                aria-current={
+                  item.ariaCurrent === undefined ? undefined : "page"
+                }
               >
                 {item.text}
               </Link>
@@ -118,12 +94,12 @@ const Navbar: React.FC = () => {
           ))}
           <li className="flex flex-col space-y-2 mt-2">
             <ThemeSwitcher />
-            <Button
+            <button
               type="button"
-              className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-2 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
+              className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
             >
-             Download
-            </Button>
+              Download
+            </button>
           </li>
         </ul>
       </div>
