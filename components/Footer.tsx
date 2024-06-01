@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "@/public/assets/logo.svg";
+import Logo1 from "@/public/assets/logo1.svg";
 import Call from "@/public/assets/call.svg";
 import Msg from "@/public/assets/msg.svg";
 import { footerLinks } from "@/constants/index";
@@ -13,15 +13,13 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-3 py-6 lg:py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <div className="flex flex-col items-start">
-            <Link href="/" className="flex items-center mb-4">
-              <Image
-                src={Logo}
-                alt="Flowbite Logo"
-                height={38}
-                width={120}
-                loading="lazy"
-              />
-            </Link>
+          <Link
+            href="/"
+            className="flex flex-row items-center space-x-2 rtl:space-x-reverse mb-4"
+          >
+            <Image src={Logo1} alt=" Logo" height={38} width={38} />
+            <span className="font-extrabold text-3xl">uifry</span>
+          </Link>
             <div className="flex flex-row items-center gap-3 mb-4">
               <Image
                 src={Call}

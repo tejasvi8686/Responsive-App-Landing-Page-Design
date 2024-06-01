@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import Logo from "@/public/assets/logo.svg";
+import Logo1 from "@/public/assets/logo1.svg";
 import Star from "@/public/assets/start.svg";
 import { Button } from "./ui/button";
 // import {navItems} from "@/constants/index"
@@ -48,10 +48,11 @@ const Navbar: React.FC = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-6 rtl:space-x-reverse">
           <Link
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            href="/"
+            className="flex flex-row items-center space-x-2 rtl:space-x-reverse"
           >
-            <Image src={Logo} alt=" Logo" height={38} width={120} />
+            <Image src={Logo1} alt=" Logo" height={38} width={38} />
+            <span className="font-extrabold text-3xl">uifry</span>
           </Link>
           <Image
             src={Star}
