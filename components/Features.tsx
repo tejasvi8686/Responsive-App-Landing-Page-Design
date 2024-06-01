@@ -22,7 +22,7 @@ const Features = () => {
                     {item.title}
                   </span>
                 </div>
-                <p className="text-sm font-medium">{item.description}</p>
+                <p className="text-sm font-medium text-gray-700 dark:text-white">{item.description}</p>
               </div>
             ))}
           </div>
