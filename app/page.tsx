@@ -5,6 +5,7 @@ import FeaturesImage from "@/public/assets/features.svg";
 import Bell from "@/public/assets/bell.svg";
 import Cstar from "@/public/assets/cStar.svg";
 import Vise from "@/public/assets/visa.svg"
+import Testimonials from "@/components/Testimonial";
 export default function Home() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function Home() {
         iconAlt="cstar"
         iconText="Fully Customizable"
       />
+      <Testimonials />
     </>
   );
 }

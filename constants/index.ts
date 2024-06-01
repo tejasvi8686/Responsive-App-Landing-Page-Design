@@ -2,6 +2,12 @@ import Cube from "@/public/assets/cube-02.svg";
 import Cubical from "@/public/assets/cube-04.svg";
 import Star from "@/public/assets/star-05.svg";
 
+import IMG1 from "@/public/assets/test/1.svg";
+import IMG2 from "@/public/assets/test/2.svg";
+import IMG3 from "@/public/assets/test/3.svg";
+import IMG4 from "@/public/assets/test/4.svg";
+import IMG5 from "@/public/assets/test/5.svg"
+
 // navbar
 export const navItems = [
   {
@@ -90,4 +96,14 @@ export  const features = [
     description:
       "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
   },
+];
+
+// testimonial
+
+export const testimonial = [
+  { src: IMG1, height: 40, width: 40, alt: 'img1', className: '' },
+  { src: IMG2, height: 30, width: 30, alt: 'img2', className: 'opacity-40' },
+  { src: IMG3, height: 30, width: 30, alt: 'img3', className: 'opacity-40' },
+  { src: IMG4, height: 30, width: 30, alt: 'img4', className: 'opacity-40' },
+  { src: IMG5, height: 30, width: 30, alt: 'img5', className: 'opacity-40' },
 ];
