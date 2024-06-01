@@ -37,7 +37,7 @@ const Hero = () => {
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             Make The Best Financial Descion
           </h1>
-          <p className="max-w-2xl mb-6 font-light text-[#7f7f7d] lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl mb-6 font-light text-[#7f7f7d] lg:mb-8 md:text-lg lg:text-xl dark:text-white">
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>

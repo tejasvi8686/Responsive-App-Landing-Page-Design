@@ -1,5 +1,8 @@
-// navbar
+import Cube from "@/public/assets/cube-02.svg";
+import Cubical from "@/public/assets/cube-04.svg";
+import Star from "@/public/assets/star-05.svg";
 
+// navbar
 export const navItems = [
   {
     href: "/",
@@ -29,7 +32,6 @@ export const navItems = [
 ];
 
 // fotter 
-
 export const footerLinks = [
   {
     title: "Links",
@@ -61,6 +63,31 @@ export const footerLinks = [
     links: [
       { href: "/", text: "Stay Up To Date" },
     ],
-    hasForm: true, 
+    hasForm: true,
+  },
+];
+
+// features
+export  const features = [
+  {
+    src: Star,
+    alt: "star",
+    title: "Budgeting Intervals",
+    description:
+      "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+  },
+  {
+    src: Cube,
+    alt: "cube",
+    title: "Budgeting Intervals",
+    description:
+      "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
+  },
+  {
+    src: Cubical,
+    alt: "cubical",
+    title: "Budgeting Intervals",
+    description:
+      "Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.",
   },
 ];
