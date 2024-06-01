@@ -1,15 +1,23 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "@/public/assets/logo.svg";
+import Phones from "@/public/assets/phones.svg";
 import { Button } from "./ui/button";
-import BG from "@/public/assets/bg1.svg"
+import BG from "@/public/assets/bg1.svg";
 import Watch from "@/public/assets/watch.svg";
-import Strip from "@/public/assets/strip.svg"
+import Strip from "@/public/assets/strip.svg";
+import Star from "@/public/assets/start.svg";
 
 const Hero = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
-       <div
+      <Image
+        src={Star}
+        alt="Start"
+        height={50}
+        width={50}
+        className="absolute left-10 top-16 hidden md:block rotate-[27deg]"
+      />
+      <div
         className="absolute z-0 hidden lg:block"
         style={{
           width: "417px",
@@ -21,11 +29,11 @@ const Hero = () => {
           backgroundImage: `url(${BG.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center",
         }}
       ></div>
       <div className="grid max-w-screen-xl px-4 py-28 mx-auto lg:gap-8 xl:gap-0 lg:py-32 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7 z-10" >
+        <div className="mr-auto place-self-center lg:col-span-7 z-10">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
             Make The Best Financial Descion
           </h1>
@@ -49,13 +57,39 @@ const Hero = () => {
                 ></path>
               </svg>
             </Button>
-            <Image src={Watch} width={153} height={56} alt="watch" loading="lazy" className="cursor-pointer" />
+            <Image
+              src={Watch}
+              width={153}
+              height={56}
+              alt="watch"
+              loading="lazy"
+              className="cursor-pointer"
+            />
           </div>
-
-          <Image src={Strip} width={505} height={313} alt="strip" loading="lazy" />
+          <Image
+            src={Star}
+            alt="Start"
+            height={50}
+            width={50}
+            className="absolute left-32 bottom-96 hidden md:block"
+          />
+          <Image
+            src={Strip}
+            width={505}
+            height={313}
+            alt="strip"
+            loading="lazy"
+          />
         </div>
         <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-          <Image src={Logo} alt="mockup" height={500} width={500} />
+          <Image
+            src={Phones}
+            alt="mockup"
+            height={775}
+            width={738}
+            className="absolute sm:top-1 sm:right-[-73px] hidden lg:block"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>

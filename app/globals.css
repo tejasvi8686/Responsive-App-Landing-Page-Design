@@ -75,13 +75,3 @@
   }
 }
 
-
-.star-icon path {
-  fill: black; 
-}
-
-@media (prefers-color-scheme: dark) {
-  .star-icon path {
-    fill: white; 
-  }
-}
