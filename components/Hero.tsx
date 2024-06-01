@@ -66,13 +66,7 @@ const Hero = () => {
               className="cursor-pointer"
             />
           </div>
-          <Image
-            src={Star}
-            alt="Start"
-            height={50}
-            width={50}
-            className="absolute left-32 bottom-96 hidden md:block"
-          />
+
           <Image
             src={Strip}
             width={505}

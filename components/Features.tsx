@@ -6,14 +6,14 @@ import {features} from '@/constants/index'
 const Features = () => {
   return (
     <section className=" bg-white dark:bg-gray-900">
-      <div className="flex sm:flex-row items-center flex-col-reverse sm:px-10 px-5">
+      <div className="flex lg:flex-row items-center flex-col-reverse  sm:px-10 px-5">
         <Image src={FeaturesImage} height={719} width={719} alt="ft" />
         <div>
           <div className="mb-8">
             <h3 className="text-lg font-medium text-[#ff5555]">FEATURES</h3>
             <h1 className="sm:text-5xl text-3xl  font-bold">Uifry Premium</h1>
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8"> 
             {features.map((item, index) => (
               <div key={index} className="flex flex-col">
                 <div className="flex flex-row gap-2">
