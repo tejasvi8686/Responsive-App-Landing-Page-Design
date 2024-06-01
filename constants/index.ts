@@ -27,4 +27,39 @@ export const navItems = [
   },
 ];
 
+// fotter 
 
+export const footerLinks = [
+  {
+    title: "Links",
+    links: [
+      { href: "https://flowbite.com/", text: "Home" },
+      { href: "https://tailwindcss.com/", text: "About Us" },
+      { href: "https://tailwindcss.com/", text: "Bookings" },
+      { href: "https://tailwindcss.com/", text: "Blogs" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { href: "https://github.com/themesberg/flowbite", text: "Term of Use" },
+      { href: "https://discord.gg/4eeurUVvTy", text: "Privacy Policy" },
+      { href: "https://discord.gg/4eeurUVvTy", text: "Cookie Policy" },
+    ],
+  },
+  {
+    title: "Product",
+    links: [
+      { href: "#", text: "Take Tour" },
+      { href: "#", text: "Live Chat" },
+      { href: "#", text: "Reviews" },
+    ],
+  },
+  {
+    title: "Newsletter",
+    links: [
+      { href: "#", text: "Stay Up To Date" },
+    ],
+    hasForm: true, 
+  },
+];

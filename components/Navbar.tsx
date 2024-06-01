@@ -4,7 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "@/public/assets/logo.svg";
-import { navItems } from "@/constants/index"
+import { navItems } from "@/constants";
+
 
 
 const Navbar: React.FC = () => {
