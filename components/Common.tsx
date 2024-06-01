@@ -23,7 +23,7 @@ const Common: React.FC<CommonProps> = ({
   propstyling = "",
 }) => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900 sm:container ">
       <div className={`flex lg:flex-row items-center flex-col ${propstyling} sm:pl-14 pl-5 sm:pr-14 pr-5`}>
         <div>
           <div className="sm:mb-9 mb-5">

@@ -5,7 +5,7 @@ import { testimonial } from "@/constants/index";
 
 const Testimonials = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900 sm:container">
       <div className="flex flex-col mx-auto text-center">
         <h3 className="text-lg font-bold">TESTIMONIAL</h3>
         <h1 className="sm:text-5xl text-3xl  font-bold">

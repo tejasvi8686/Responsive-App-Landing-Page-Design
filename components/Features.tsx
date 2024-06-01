@@ -5,9 +5,9 @@ import {features} from '@/constants/index'
 
 const Features = () => {
   return (
-    <section className=" bg-white dark:bg-gray-900">
-      <div className="flex lg:flex-row items-center flex-col-reverse  sm:px-10 px-5">
-        <Image src={FeaturesImage} height={719} width={719} alt="ft" />
+    <section className=" bg-white dark:bg-gray-900 sm:container ">
+      <div className="flex lg:flex-row items-center flex-col-reverse sm:mb-[-100px] sm:px-10 px-5">
+        <Image src={FeaturesImage} height={700} width={700} alt="ft" />
         <div>
           <div className="mb-8">
             <h3 className="text-lg font-medium text-[#ff5555]">FEATURES</h3>
@@ -16,7 +16,7 @@ const Features = () => {
           <div className="flex flex-col gap-8"> 
             {features.map((item, index) => (
               <div key={index} className="flex flex-col">
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 mb-2">
                   <Image src={item.src} height={24} width={24} alt={item.alt} loading="lazy" />
                   <span className="text-lg font-semibold text-black dark:text-white">
                     {item.title}
