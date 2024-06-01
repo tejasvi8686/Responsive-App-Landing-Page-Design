@@ -6,6 +6,7 @@ import Bell from "@/public/assets/bell.svg";
 import Cstar from "@/public/assets/cStar.svg";
 import Vise from "@/public/assets/visa.svg";
 import Testimonials from "@/components/Testimonial";
+import Faq from "@/components/Faq";
 export default function Home() {
   return (
     <>
@@ -32,6 +33,7 @@ export default function Home() {
         iconText="Fully Customizable"
       />
       <Testimonials />
+      <Faq />
     </>
   );
 }
