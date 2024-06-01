@@ -42,7 +42,7 @@ const Hero = () => {
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
           </p>
           <div className="flex flex-row">
-            <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-none mr-5">
+            <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-md mr-5">
               Get started
               <svg
                 className="w-5 h-5 ml-2 -mr-1"

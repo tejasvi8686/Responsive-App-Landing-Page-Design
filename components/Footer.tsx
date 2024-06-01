@@ -5,6 +5,7 @@ import Logo from "@/public/assets/logo.svg";
 import Call from "@/public/assets/call.svg";
 import Msg from "@/public/assets/msg.svg";
 import { footerLinks } from "@/constants/index";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -70,9 +71,9 @@ const Footer = () => {
                       placeholder="Your Email"
                       className="w-full border-none sm:text-sm bg-transparent p-3 sm:p-0"
                     />
-                    <button className="mt-1 w-full  bg-black hover:bg-gray-800 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555]">
+                    <Button className="mt-1 w-full  bg-black hover:bg-gray-800 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555] rounded-md">
                       Sign Up
-                    </button>
+                    </Button>
                   </div>
                 </form>
               )}
