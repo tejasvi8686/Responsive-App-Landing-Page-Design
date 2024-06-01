@@ -1,11 +1,65 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import Logo from "@/public/assets/logo.svg";
+import { Button } from "./ui/button";
+import BG from "@/public/assets/bg1.svg"
+import Watch from "@/public/assets/watch.svg";
+import Strip from "@/public/assets/strip.svg"
 
 const Hero = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic repudiandae nemo, quaerat sed ratione blanditiis esse nisi! Molestias temporibus iusto culpa nihil, aut doloremque laborum suscipit quos facilis nulla eos a deleniti? Quibusdam id optio ipsum nam dignissimos illo. Ipsam sint sunt consequatur deleniti itaque, ut quia nihil accusantium porro asperiores. Dolor voluptatem minus quae voluptates facere ullam illum doloremque, odio eaque, ipsa molestias? Quia obcaecati, expedita repudiandae hic placeat natus velit, a asperiores delectus esse, nemo ad? Maiores veniam, voluptatem in temporibus non corrupti eligendi magnam veritatis et atque tenetur! Repellendus blanditiis, voluptatum rerum fugiat unde esse rem!
-    </div>
-  )
-}
+    <section className="bg-white dark:bg-gray-900">
+       <div
+        className="absolute z-0 hidden lg:block"
+        style={{
+          width: "417px",
+          height: "330px",
+          left: "177px",
+          right: "782px",
+          top: "80px",
+          bottom: "5505px",
+          backgroundImage: `url(${BG.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      ></div>
+      <div className="grid max-w-screen-xl px-4 py-28 mx-auto lg:gap-8 xl:gap-0 lg:py-32 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7 z-10" >
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            Make The Best Financial Descion
+          </h1>
+          <p className="max-w-2xl mb-6 font-light text-[#7f7f7d] lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
+            faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
+          </p>
+          <div className="flex flex-row">
+            <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-none mr-5">
+              Get started
+              <svg
+                className="w-5 h-5 ml-2 -mr-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </Button>
+            <Image src={Watch} width={153} height={56} alt="watch" loading="lazy" className="cursor-pointer" />
+          </div>
 
-export default Hero
+          <Image src={Strip} width={505} height={313} alt="strip" loading="lazy" />
+        </div>
+        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+          <Image src={Logo} alt="mockup" height={500} width={500} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

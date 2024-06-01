@@ -9,7 +9,7 @@ import { footerLinks } from "@/constants/index";
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-3 py-6 lg:py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <div className="flex flex-col items-start">
             <Link href="/" className="flex items-center mb-4">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           {footerLinks.map((section, index) => (
             <div key={index} className="flex flex-col">
-              <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
+              <h2 className="mb-4 text-lg font-semibold text-black uppercase dark:text-white leading-10">
                 {section.title}
               </h2>
               <ul className="flex flex-col gap-4">
@@ -52,7 +52,7 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="hover:underline font-medium text-base text-black dark:text-white"
+                      className="hover:underline font-medium text-base text-black dark:text-white leading-7"
                     >
                       {link.text}
                     </Link>
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-center">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 text-center">
+          <span className="text-sm text-black sm:text-center dark:text-white text-center">
             Copyright 2022 uifry.com all rights reserved
           </span>
         </div>

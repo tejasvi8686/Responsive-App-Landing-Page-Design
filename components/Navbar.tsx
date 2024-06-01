@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo from "@/public/assets/logo.svg";
+import Star from "@/public/assets/start.svg";
+import { Button } from "./ui/button";
 // import {navItems} from "@/constants/index"
 
 const navItems = [
@@ -42,15 +44,23 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 sm:px-10 px-0">
+    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 sm:px-8 px-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-6 rtl:space-x-reverse">
           <Link
             href="https://flowbite.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <Image src={Logo} alt="Flowbite Logo" height={38} width={120} />
+            <Image src={Logo} alt=" Logo" height={38} width={120} />
           </Link>
+          <Image
+            src={Star}
+            alt="Start"
+            height={50}
+            width={50}
+            className="absolute right-5 top-16 hidden md:block "
+          />
+
           <ul className="hidden md:flex space-x-8 rtl:space-x-reverse">
             {navItems.map((item, index) => (
               <li key={index}>
@@ -69,12 +79,12 @@ const Navbar: React.FC = () => {
         </div>
         <div className="hidden md:flex items-center space-x-4 rtl:space-x-reverse">
           <ThemeSwitcher />
-          <button
+          <Button
             type="button"
-            className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
+            className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-none"
           >
             Download
-          </button>
+          </Button>
         </div>
         <button
           data-collapse-toggle="navbar-sticky"
@@ -122,12 +132,12 @@ const Navbar: React.FC = () => {
           ))}
           <li className="flex flex-col space-y-2 mt-2">
             <ThemeSwitcher />
-            <button
+            <Button
               type="button"
-              className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555]"
+              className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-none"
             >
               Download
-            </button>
+            </Button>
           </li>
         </ul>
       </div>
