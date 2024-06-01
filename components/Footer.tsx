@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <div className="flex flex-col items-start">
             <Link href="/" className="flex items-center mb-4">
               <Image
@@ -68,9 +68,9 @@ const Footer = () => {
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="w-full border-none sm:text-sm"
+                      className="w-full border-none sm:text-sm bg-transparent p-3 sm:p-0"
                     />
-                    <button className="mt-1 w-full rounded bg-black hover:bg-gray-800 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555]">
+                    <button className="mt-1 w-full  bg-black hover:bg-gray-800 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555]">
                       Sign Up
                     </button>
                   </div>
