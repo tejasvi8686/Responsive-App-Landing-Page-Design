@@ -28,7 +28,7 @@ const Footer = () => {
                 loading="lazy"
                 alt="call"
               />
-              <span className="font-medium text-base">Help@Frybix.com</span>
+              <Link href="mailto:Help@Frybix.com" className="font-medium text-base">Help@Frybix.com</Link>
             </div>
             <div className="flex flex-row items-center gap-3">
               <Image
@@ -38,7 +38,7 @@ const Footer = () => {
                 loading="lazy"
                 alt="call"
               />
-              <span className="font-medium text-base">+1 234 456 678 89</span>
+             <Link href="tel:+123445667889" className="font-medium text-base">+1 234 456 678 89</Link>
             </div>
           </div>
           {footerLinks.map((section, index) => (

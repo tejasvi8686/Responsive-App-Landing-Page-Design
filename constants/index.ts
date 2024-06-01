@@ -107,3 +107,50 @@ export const testimonial = [
   { src: IMG4, height: 30, width: 30, alt: 'img4', className: 'opacity-40' },
   { src: IMG5, height: 30, width: 30, alt: 'img5', className: 'opacity-40' },
 ];
+
+
+// fag 
+export const faqItems = [
+  {
+    id: 1,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-[#ff5555]",
+    textColor: "text-white dark:text-black",
+  },
+  {
+    id: 2,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-white",
+    textColor: "text-black",
+  },
+  {
+    id: 3,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-[#ff5555]",
+    textColor: "text-white dark:text-black",
+  },
+  {
+    id: 4,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-white",
+    textColor: "text-black",
+  },
+  {
+    id: 5,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-[#ff5555]",
+    textColor: "text-white dark:text-black",
+  },
+  {
+    id: 6,
+    title: "The Best Financial Accounting App Ever!",
+    content: "“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.",
+    bgColor: "bg-white",
+    textColor: "text-black",
+  },
+];

@@ -78,5 +78,19 @@
   }
 }
 
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: gray;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark-mode .slick-prev:before,
+.dark-mode .slick-next:before {
+  color: white; /* Color for dark mode */
+}
 
 
