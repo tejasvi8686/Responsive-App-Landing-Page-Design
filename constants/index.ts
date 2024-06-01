@@ -1,4 +1,5 @@
 // navbar
+
 export const navItems = [
   {
     href: "/",
@@ -33,32 +34,32 @@ export const footerLinks = [
   {
     title: "Links",
     links: [
-      { href: "https://flowbite.com/", text: "Home" },
-      { href: "https://tailwindcss.com/", text: "About Us" },
-      { href: "https://tailwindcss.com/", text: "Bookings" },
-      { href: "https://tailwindcss.com/", text: "Blogs" },
+      { href: "/", text: "Home" },
+      { href: "/", text: "About Us" },
+      { href: "/", text: "Bookings" },
+      { href: "/", text: "Blogs" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { href: "https://github.com/themesberg/flowbite", text: "Term of Use" },
-      { href: "https://discord.gg/4eeurUVvTy", text: "Privacy Policy" },
-      { href: "https://discord.gg/4eeurUVvTy", text: "Cookie Policy" },
+      { href: "/", text: "Term of Use" },
+      { href: "/", text: "Privacy Policy" },
+      { href: "/", text: "Cookie Policy" },
     ],
   },
   {
     title: "Product",
     links: [
-      { href: "#", text: "Take Tour" },
-      { href: "#", text: "Live Chat" },
-      { href: "#", text: "Reviews" },
+      { href: "/", text: "Take Tour" },
+      { href: "/", text: "Live Chat" },
+      { href: "/", text: "Reviews" },
     ],
   },
   {
     title: "Newsletter",
     links: [
-      { href: "#", text: "Stay Up To Date" },
+      { href: "/", text: "Stay Up To Date" },
     ],
     hasForm: true, 
   },
