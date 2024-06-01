@@ -34,6 +34,7 @@ const Testimonials = () => {
                 width={image.width}
                 alt={image.alt}
                 className={image.className}
+                loading="lazy"
               />
             ))}
           </div>

@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-6 rtl:space-x-reverse">
           <Link
             href="/"
-            className="flex flex-row items-center space-x-2 rtl:space-x-reverse"
+            className="flex flex-row items-center space-x-2 rtl:space-x-reverse mr-5"
           >
             <Image src={Logo1} alt=" Logo" height={38} width={38} />
             <span className="font-extrabold text-3xl">uifry</span>
