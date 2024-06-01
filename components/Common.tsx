@@ -24,7 +24,7 @@ const Common: React.FC<CommonProps> = ({
 }) => {
   return (
     <section className="bg-white dark:bg-gray-900">
-      <div className={`flex lg:flex-row items-center flex-col ${propstyling} sm:pl-14 pl-5`}>
+      <div className={`flex lg:flex-row items-center flex-col ${propstyling} sm:pl-14 pl-5 sm:pr-14 pr-5`}>
         <div>
           <div className="sm:mb-9 mb-5">
             <h3 className="text-lg font-medium text-[#ff5555]">{subtitle}</h3>
