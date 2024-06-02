@@ -25,20 +25,43 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, install the dependencies and run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Installation
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    ```
+
+2. **Navigate to the project directory**
+
+    ```bash
+    cd your-repository
+    ```
+
+3. **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server**
+
+    ```bash
+    npm run dev
+    ```
+
+### Usage
+
+Instructions on how to use the project.
+
+### Running Tests
 
 ```bash
-npm run install # to install all dependencies
-
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm test
