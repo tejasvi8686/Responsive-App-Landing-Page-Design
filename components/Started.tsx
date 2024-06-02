@@ -2,19 +2,19 @@ import Image from "next/image";
 import React from "react";
 import Iphone from "@/public/assets/phone12.svg";
 import { Button } from "./ui/button";
-import Whitestar from "@/public/assets/whitestar.svg"
-import BG12 from "@/public/assets/bgbg1.svg"
-import Border1 from "@/public/assets/border1.svg"
-import Border2 from "@/public/assets/border2.svg"
-
+import Whitestar from "@/public/assets/whitestar.svg";
+import BG12 from "@/public/assets/bgbg1.svg";
+import Border1 from "@/public/assets/border1.svg";
+import Border2 from "@/public/assets/border2.svg";
+import RGBM from "@/public/assets/rgbm.svg";
 
 const Started = () => {
   return (
     <section className="g-white dark:bg-gray-900 py-14 sm:container">
-      <div className="sm:px-10 px-5 sm:py-5 py-9 ">
+      <div className="sm:px-10 px-5 sm:py-5 py-9 sm:mt-10 mt-0">
         <div className="bg-black sm:pl-9 sm:pr-0 pl-6 pr-6 py-10 rounded-lg relative">
           <div className="flex lg:flex-row flex-col justify-between items-center sm:gap-0 gap-4">
-            <div className="flex flex-col gap-4 z-30">
+            <div className="flex flex-col gap-4">
               <h1 className="sm:text-5xl text-3xl text-white font-bold">
                 Ready To Get Started ?
               </h1>
@@ -67,7 +67,7 @@ const Started = () => {
             alt="Start"
             height={222}
             width={306}
-            className="absolute sm:bottom-0 bottom-[-28px] lg:left-[70%] left-[11%] z-0 rounded-lg"
+            className="absolute sm:bottom-0 bottom-[-28px] lg:left-[70%] left-[11%] z-0 sm:rotate-180 rotate-0"
             loading="lazy"
           />
           <Image
@@ -76,7 +76,7 @@ const Started = () => {
             height={410}
             width={410}
             className="absolute bottom-0 right-3 top-0 z-0"
-      
+            loading="lazy"
           />
           <Image
             src={Border2}
@@ -84,7 +84,16 @@ const Started = () => {
             height={419}
             width={419}
             className="absolute bottom-0 left-1  z-0"
-      
+            loading="lazy"
+          />
+
+          <Image
+            src={RGBM}
+            alt="Start"
+            height={237}
+            width={327}
+            className="absolute bottom-0 top-[-133px] left-[-140px] -z-10 rotate-180"
+            loading="lazy"
           />
         </div>
       </div>

@@ -10,7 +10,7 @@ import Star from "@/public/assets/start.svg";
 
 const Hero = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 sm:container">
+    <section className="bg-white dark:bg-gray-900 sm:container relative">
       <Image
         src={Star}
         alt="Start"
@@ -18,16 +18,24 @@ const Hero = () => {
         width={50}
         className="absolute left-10 top-16 hidden md:block rotate-[27deg]"
       />
-      <motion.div 
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{
-        delay: 0.2,
-        x: { type: "spring", stiffness: 60 },
-        opacity: { duration: 1 },
-        ease: "easeIn",
-        duration: 1,
-      }}
+      <Image
+        src={Star}
+        alt="Start"
+        height={50}
+        width={50}
+        className="absolute right-5 top-16 hidden md:block "
+      />
+
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
         className="absolute z-0 hidden lg:block"
         style={{
           width: "417px",
@@ -36,6 +44,7 @@ const Hero = () => {
           right: "782px",
           top: "80px",
           bottom: "5505px",
+          rotate: "180",
           backgroundImage: `url(${BG.src})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -111,7 +120,7 @@ const Hero = () => {
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+            animate={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -119,14 +128,16 @@ const Hero = () => {
               ease: "easeIn",
               duration: 1,
             }}
-          >   <Image
-          src={Strip}
-          width={505}
-          height={313}
-          alt="strip"
-          loading="lazy"
-        /></motion.div>
-       
+          >
+            {" "}
+            <Image
+              src={Strip}
+              width={505}
+              height={313}
+              alt="strip"
+              loading="lazy"
+            />
+          </motion.div>
         </div>
         <motion.div
           initial={{ x: -100, opacity: 0 }}

@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Logo1 from "@/public/assets/logo1.svg";
-import Star from "@/public/assets/start.svg";
 import { Button } from "./ui/button";
 // import {navItems} from "@/constants/index"
 
@@ -45,7 +44,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 sm:px-8 px-0 sm:container ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <div className="flex items-center space-x-6 rtl:space-x-reverse">
           <Link
             href="/"
@@ -54,13 +53,6 @@ const Navbar: React.FC = () => {
             <Image src={Logo1} alt=" Logo" height={38} width={38} />
             <span className="font-extrabold text-3xl">uifry</span>
           </Link>
-          <Image
-            src={Star}
-            alt="Start"
-            height={50}
-            width={50}
-            className="absolute right-5 top-16 hidden md:block "
-          />
 
           <ul className="hidden md:flex space-x-8 rtl:space-x-reverse">
             {navItems.map((item, index) => (
