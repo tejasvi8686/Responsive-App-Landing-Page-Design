@@ -10,7 +10,7 @@
 ---
 # ⭐DO NOT FORGET TO STAR THIS REPO⭐
 ---
-## Images of The Portfolio Website:
+## ScreenShot of the Website:
 
 <img src="https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshots/11.png" width=100% height=100%/> <img src="https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshots/12.png" width=100% height=100%/>
 <img src="https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshots/13.png" width=100% height=100%/>
