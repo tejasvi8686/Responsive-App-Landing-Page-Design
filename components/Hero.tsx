@@ -1,7 +1,8 @@
+"use client";
 import Image from "next/image";
-import React from "react";
 import Phones from "@/public/assets/phones.svg";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 import BG from "@/public/assets/bg1.svg";
 import Watch from "@/public/assets/watch.svg";
 import Strip from "@/public/assets/strip.svg";
@@ -17,7 +18,16 @@ const Hero = () => {
         width={50}
         className="absolute left-10 top-16 hidden md:block rotate-[27deg]"
       />
-      <div
+      <motion.div 
+      initial={{ x: 100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        x: { type: "spring", stiffness: 60 },
+        opacity: { duration: 1 },
+        ease: "easeIn",
+        duration: 1,
+      }}
         className="absolute z-0 hidden lg:block"
         style={{
           width: "417px",
@@ -31,17 +41,50 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      ></div>
+      ></motion.div>
       <div className="grid max-w-screen-xl px-4 pt-28 mx-auto lg:gap-8 xl:gap-0 lg:pt-32 lg:grid-cols-12 sm:mb-[-50px]">
         <div className="mr-auto place-self-center lg:col-span-7 z-10">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+          <motion.h1
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+          >
             Make The Best Financial Descion
-          </h1>
-          <p className="max-w-2xl mb-6 font-light text-[#7f7f7d] lg:mb-8 md:text-lg lg:text-xl dark:text-white">
+          </motion.h1>
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.6 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="max-w-2xl mb-6 font-light text-[#7f7f7d] lg:mb-8 md:text-lg lg:text-xl dark:text-white"
+          >
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
-          </p>
-          <div className="flex flex-row">
+          </motion.p>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.3,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.6 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-row"
+          >
             <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-md mr-5">
               Get started
               <svg
@@ -65,17 +108,38 @@ const Hero = () => {
               loading="lazy"
               className="cursor-pointer"
             />
-          </div>
-
-          <Image
-            src={Strip}
-            width={505}
-            height={313}
-            alt="strip"
-            loading="lazy"
-          />
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.6 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >   <Image
+          src={Strip}
+          width={505}
+          height={313}
+          alt="strip"
+          loading="lazy"
+        /></motion.div>
+       
         </div>
-        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className=" lg:mt-0 lg:col-span-5 lg:flex"
+        >
           <Image
             src={Phones}
             alt="mockup"
@@ -84,7 +148,7 @@ const Hero = () => {
             className="absolute sm:top-1 sm:right-[-73px] hidden lg:block"
             loading="lazy"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
