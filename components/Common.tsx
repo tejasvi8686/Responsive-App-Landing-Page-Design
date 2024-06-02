@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface CommonProps {
   title: string;
@@ -11,7 +13,7 @@ interface CommonProps {
   iconAlt: string;
   iconText: string;
   propstyling?: string;
-  styling? : string,
+  styling?: string;
 }
 
 const Common: React.FC<CommonProps> = ({
@@ -27,16 +29,53 @@ const Common: React.FC<CommonProps> = ({
   styling = "",
 }) => {
   return (
-    <section className="bg-white dark:bg-gray-900 sm:container relative">
+    <section className="bg-white dark:bg-gray-900 sm:container relative ">
       <div
         className={`flex lg:flex-row items-center flex-col ${propstyling} sm:pl-14 pl-5 sm:pr-14 pr-5`}
       >
         <div>
           <div className="sm:mb-9 mb-5">
-            <h3 className="text-lg font-medium text-[#ff5555]">{subtitle}</h3>
-            <h1 className="sm:text-5xl text-3xl font-bold">{title}</h1>
+            <motion.h3
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="text-lg font-medium text-[#ff5555]"
+            >
+              {subtitle}
+            </motion.h3>
+            <motion.h1
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="sm:text-5xl text-3xl font-bold"
+            >
+              {title}
+            </motion.h1>
           </div>
-          <div className="flex flex-row gap-4 items-center sm:mb-7 mb-5">
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="flex flex-row gap-4 items-center sm:mb-7 mb-5"
+          >
             <Image
               src={icon}
               height={48}
@@ -45,14 +84,36 @@ const Common: React.FC<CommonProps> = ({
               loading="lazy"
             />
             <span className="text-lg font-semibold">{iconText}</span>
-          </div>
+          </motion.div>
           <div>
-            <p className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white">
+            <motion.p
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white"
+            >
               {description}
-            </p>
+            </motion.p>
           </div>
         </div>
-        <Image src={featuresImage} height={719} width={719} alt="features" />
+        <motion.div initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}>
+   
+          <Image src={featuresImage} height={3000} width={3000} alt="features" />
+        </motion.div>
       </div>
       <Image
         src={icon2}

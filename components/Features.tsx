@@ -1,24 +1,73 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import FeaturesImage from "@/public/assets/features.svg";
 import { features } from "@/constants/index";
 import RGBM from "@/public/assets/rgbm.svg";
 import Star from "@/public/assets/start.svg";
+import { motion } from "framer-motion";
 
 const Features = () => {
   return (
     <section className=" bg-white dark:bg-gray-900 sm:container relative">
       <div className="flex lg:flex-row items-center flex-col-reverse sm:mb-[-100px] sm:px-10 px-5">
-        <Image src={FeaturesImage} height={700} width={700} alt="ft" />
+        <motion.div initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}>
+        <Image src={FeaturesImage} height={1000} width={1000} alt="ft" />
+        </motion.div>
         <div>
           <div className="mb-8">
-            <h3 className="text-lg font-medium text-[#ff5555]">FEATURES</h3>
-            <h1 className="sm:text-5xl text-3xl  font-bold">Uifry Premium</h1>
+            <motion.h3
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="text-lg font-medium text-[#ff5555]"
+            >
+              FEATURES
+            </motion.h3>
+            <motion.h1
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="sm:text-5xl text-3xl  font-bold"
+            >
+              Uifry Premium
+            </motion.h1>
           </div>
           <div className="flex flex-col gap-8">
             {features.map((item, index) => (
               <div key={index} className="flex flex-col">
-                <div className="flex flex-row gap-2 mb-2">
+                <motion.div
+                  initial={{ x: -100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", stiffness: 60 },
+                    opacity: { duration: 1 },
+                    ease: "easeIn",
+                    duration: 1,
+                  }}
+                  className="flex flex-row gap-2 mb-2"
+                >
                   <Image
                     src={item.src}
                     height={24}
@@ -26,13 +75,35 @@ const Features = () => {
                     alt={item.alt}
                     loading="lazy"
                   />
-                  <span className="text-lg font-semibold text-black dark:text-white">
+                  <motion.span
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                      delay: 0.2,
+                      x: { type: "spring", stiffness: 60 },
+                      opacity: { duration: 1 },
+                      ease: "easeIn",
+                      duration: 1,
+                    }}
+                    className="text-lg font-semibold text-black dark:text-white"
+                  >
                     {item.title}
-                  </span>
-                </div>
-                <p className="text-sm font-medium text-gray-700 dark:text-white">
+                  </motion.span>
+                </motion.div>
+                <motion.p
+                  initial={{ x: -100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.2,
+                    x: { type: "spring", stiffness: 60 },
+                    opacity: { duration: 1 },
+                    ease: "easeIn",
+                    duration: 1,
+                  }}
+                  className="text-sm font-medium text-gray-700 dark:text-white"
+                >
                   {item.description}
-                </p>
+                </motion.p>
               </div>
             ))}
           </div>

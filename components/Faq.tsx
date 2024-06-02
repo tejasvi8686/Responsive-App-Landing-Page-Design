@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick-theme.css";
 import Star from "@/public/assets/start.svg";
 import Image from "next/image";
@@ -114,10 +115,26 @@ const Faq = () => {
       <div className="sm:px-10  px-6 sm:py-9 py-14">
         <div className="flex flex-row items-center lg:gap-60 gap-9">
           <div className="mb-9">
-            <h3 className="text-lg font-medium text-[#ff5555]">FAQ</h3>
-            <h1 className="font-bold sm:text-5xl text-2xl">
+            <motion.h3 initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className="text-lg font-medium text-[#ff5555]">FAQ</motion.h3>
+            <motion.h1 initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }} className="font-bold sm:text-5xl text-2xl">
               Frequently Asked <br /> Questions
-            </h1>
+            </motion.h1>
           </div>
           <Image src={Star} alt="Star" height={50} width={50} className="" />
         </div>

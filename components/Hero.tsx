@@ -28,7 +28,7 @@ const Hero = () => {
 
       <motion.div
         initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{
           delay: 0.2,
           x: { type: "spring", stiffness: 60 },
@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="mr-auto place-self-center lg:col-span-7 z-10">
           <motion.h1
             initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.2,
               x: { type: "spring", stiffness: 60 },
@@ -69,7 +69,7 @@ const Hero = () => {
           </motion.h1>
           <motion.p
             initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.2,
               x: { type: "spring", stiffness: 60 },
@@ -84,7 +84,7 @@ const Hero = () => {
           </motion.p>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.3,
               x: { type: "spring", stiffness: 60 },
@@ -120,7 +120,7 @@ const Hero = () => {
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
@@ -141,7 +141,7 @@ const Hero = () => {
         </div>
         <motion.div
           initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{
             delay: 0.2,
             x: { type: "spring", stiffness: 60 },
