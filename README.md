@@ -13,7 +13,7 @@
 
 ## 📑 Introduction
 
-Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+Built with the latest Next.js and TypeScript, this Landing Page
 
 ## 💻 Technologies Used
 - Next.js
@@ -25,10 +25,11 @@ Built with the latest Next.js and TypeScript, this project replicates Zoom, a wi
 ## ✨ Features
 👉 Dark Mode: Implemented dark mode features.
 
+👉 Carousel: Slider in FAQ.
+
 👉 Responsive Design: Optimized for all devices.
 
 👉 Animation: Created with Framer Motion.
-
 
 
 ## ScreenShot of the Website:
