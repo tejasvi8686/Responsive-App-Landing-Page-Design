@@ -1,5 +1,5 @@
-# Landing Page 🔥
-##  Embark on a project utilizing TypeScript, Next.js, shadcn/ui, Framer Motion, and Tailwind CSS, ensuring full responsiveness with dark mode features and an engaging carousel in the FAQ section ⭐
+# Landing Page With Next.js 🔥
+
 
 ![GitHub stars](https://img.shields.io/github/stars/tejasvi8686/Responsive-App-Landing-Page-Design?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
 ![GitHub forks](https://img.shields.io/github/forks/tejasvi8686/Responsive-App-Landing-Page-Design?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
@@ -10,6 +10,27 @@
 ---
 # ⭐DO NOT FORGET TO STAR THIS REPO⭐
 ---
+
+## 📑 Introduction
+
+Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+
+## 💻 Technologies Used
+- Next.js
+- TypeScript
+- shadcn
+- Tailwind CSS
+- Farmer Motion
+
+## ✨ Features
+👉 Dark Mode: Implemented Dark Mode Features.
+
+👉 Responsive Design: Optimized for all devices.
+
+👉 Animation: with Farmer Motion.
+
+
+
 ## ScreenShot of the Website:
 
 <img src="https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshots/11.png" width=100% height=100%/> <img src="https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshots/12.png" width=100% height=100%/>
