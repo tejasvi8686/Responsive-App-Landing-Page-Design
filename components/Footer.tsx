@@ -9,17 +9,17 @@ import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 ">
-      <div className="mx-auto w-full max-w-screen-xl px-8 sm:px-3 py-6 lg:py-8">
+    <footer className="bg-white dark:bg-gray-900 sm:container">
+      <div className="mx-auto w-full max-w-screen-xl px-8 sm:px-8 py-6 lg:py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           <div className="flex flex-col items-start">
-          <Link
-            href="/"
-            className="flex flex-row items-center space-x-2 rtl:space-x-reverse mb-4"
-          >
-            <Image src={Logo1} alt=" Logo" height={38} width={38} />
-            <span className="font-extrabold text-3xl">uifry</span>
-          </Link>
+            <Link
+              href="/"
+              className="flex flex-row items-center space-x-2 rtl:space-x-reverse mb-4"
+            >
+              <Image src={Logo1} alt=" Logo" height={38} width={38} />
+              <span className="font-extrabold text-3xl">uifry</span>
+            </Link>
             <div className="flex flex-row items-center gap-3 mb-4">
               <Image
                 src={Call}
@@ -28,7 +28,12 @@ const Footer = () => {
                 loading="lazy"
                 alt="call"
               />
-              <Link href="mailto:Help@Frybix.com" className="font-medium text-base">Help@Frybix.com</Link>
+              <Link
+                href="mailto:Help@Frybix.com"
+                className="font-medium text-base"
+              >
+                Help@Frybix.com
+              </Link>
             </div>
             <div className="flex flex-row items-center gap-3">
               <Image
@@ -38,7 +43,9 @@ const Footer = () => {
                 loading="lazy"
                 alt="call"
               />
-             <Link href="tel:+123445667889" className="font-medium text-base">+1 234 456 678 89</Link>
+              <Link href="tel:+123445667889" className="font-medium text-base">
+                +1 234 456 678 89
+              </Link>
             </div>
           </div>
           {footerLinks.map((section, index) => (
@@ -79,9 +86,11 @@ const Footer = () => {
           ))}
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-center">
+        <div className="flex sm:flex-row flex-col sm:items-center sm:justify-between sm:gap-0 gap-2">
+          <span className="text-sm text-center"> Copyright 2024 uifry.com all rights reserved</span>{" "}
           <span className="text-sm text-black sm:text-center dark:text-white text-center">
-            Copyright 2022 uifry.com all rights reserved
+          Crafted with passion by {" "}
+            <Link className="font-bold" target="_blank" href="https://tejasviraj.vercel.app/">Tejasvi Raj</Link>
           </span>
         </div>
       </div>
