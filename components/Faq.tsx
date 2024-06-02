@@ -111,11 +111,11 @@ const Faq = () => {
 
   return (
     <section className="bg-white dark:bg-gray-900 sm:container mx-auto">
-      <div className="sm:px-10  px-6 py-9">
+      <div className="sm:px-10  px-6 sm:py-9 py-14">
         <div className="flex flex-row items-center lg:gap-60 gap-9">
           <div className="mb-9">
             <h3 className="text-lg font-medium text-[#ff5555]">FAQ</h3>
-            <h1 className="font-bold lg:text-5xl text-3xl">
+            <h1 className="font-bold sm:text-5xl text-2xl">
               Frequently Asked <br /> Questions
             </h1>
           </div>

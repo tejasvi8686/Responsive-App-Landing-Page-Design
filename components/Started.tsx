@@ -1,36 +1,31 @@
 import Image from "next/image";
 import React from "react";
 import Iphone from "@/public/assets/phone12.svg";
-import BG2 from "@/public/assets/bg2.svg"
 import { Button } from "./ui/button";
+import Whitestar from "@/public/assets/whitestar.svg"
+import BG12 from "@/public/assets/bgbg1.svg"
+import Border1 from "@/public/assets/border1.svg"
+import Border2 from "@/public/assets/border2.svg"
+
 
 const Started = () => {
   return (
     <section className="g-white dark:bg-gray-900 py-14 sm:container">
       <div className="sm:px-10 px-5 sm:py-5 py-9 ">
-      <div
-        className=" "
-        style={{
-          width: "100%",
-          height: "508px",
-          backgroundImage: `url(${BG2.src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-         {/* <div className="bg-black py-4 rounded-lg">
-          <div className="flex flex-row">
-            <div>
-              <h1 className="text-5xl text-white font-bold">Ready To Get Started ?</h1>
-              <p>
+        <div className="bg-black sm:pl-9 sm:pr-0 pl-6 pr-6 py-10 rounded-lg relative">
+          <div className="flex lg:flex-row flex-col justify-between items-center sm:gap-0 gap-4">
+            <div className="flex flex-col gap-4 z-30">
+              <h1 className="sm:text-5xl text-3xl text-white font-bold">
+                Ready To Get Started ?
+              </h1>
+              <p className="text-white text-lg">
                 Risus habitant leo egestas mauris diam eget morbi tempus
                 vulputate.
               </p>
-              <Button className="text-black border-0 bg-white hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-md mr-8">
+              <Button className="text-black border-0 bg-white hover:bg-slate-300 focus:ring-4 font-medium text-sm px-8 py-3 text-center  rounded-md mr-8 sm:w-[35%] w-[60%] cursor-pointer">
                 Download App
                 <svg
-                 className="w-5 h-5 ml-2 -mr-1"
+                  className="w-5 h-5 ml-2 -mr-1"
                   viewBox="0 0 26 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +39,54 @@ const Started = () => {
             </div>
             <Image
               src={Iphone}
-              height={300}
-              width={300}
+              height={459}
+              width={591}
               alt="iphone"
               loading="lazy"
+              className="z-10"
             />
           </div>
-        </div> */}
-      </div>
+          <Image
+            src={Whitestar}
+            alt="Start"
+            height={50}
+            width={50}
+            className="absolute lg:bottom-[80%] bottom-[86%] right-[15%]  lg:right-[45%] "
+            loading="lazy"
+          />
+          <Image
+            src={Whitestar}
+            alt="Start"
+            height={50}
+            width={50}
+            className="absolute bottom-[23%] right-[64%] rotate-45"
+            loading="lazy"
+          />
+          <Image
+            src={BG12}
+            alt="Start"
+            height={222}
+            width={306}
+            className="absolute sm:bottom-0 bottom-[-28px] lg:left-[70%] left-[11%] z-0 rounded-lg"
+            loading="lazy"
+          />
+          <Image
+            src={Border1}
+            alt="Start"
+            height={410}
+            width={410}
+            className="absolute bottom-0 right-3 top-0 z-0"
+      
+          />
+          <Image
+            src={Border2}
+            alt="Start"
+            height={419}
+            width={419}
+            className="absolute bottom-0 left-1  z-0"
+      
+          />
+        </div>
       </div>
     </section>
   );
