@@ -13,7 +13,7 @@
 
 ## 📑 Introduction
 
-Built with the latest Next.js and TypeScript, this Landing Page
+I've developed a modern and responsive landing page using Next.js and TypeScript. This project showcases my skills in creating dynamic, high-performance web applications with a focus on user experience and maintainable code.
 
 ## 💻 Technologies Used
 - Next.js
