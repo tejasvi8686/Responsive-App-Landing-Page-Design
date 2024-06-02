@@ -1,8 +1,8 @@
 'use client'
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import { motion } from "framer-motion";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Star from "@/public/assets/start.svg";
 import Image from "next/image";
@@ -68,7 +68,15 @@ const Faq = () => {
 
   const desktopContent = (
     <div className="flex lg:flex-row flex-col-reverse gap-5">
-      <div className="flex flex-col gap-4">
+      <motion.div initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }} className="flex flex-col gap-4">
         {faqItems.slice(0, 3).map((item) => (
           <div key={item.id} className={`${item.bgColor} px-7 py-7 rounded-lg`}>
             <h3 className={`text-2xl font-semibold ${item.textColor}`}>
@@ -79,8 +87,16 @@ const Faq = () => {
             </p>
           </div>
         ))}
-      </div>
-      <div className="flex flex-col gap-4">
+      </motion.div>
+      <motion.div initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }} className="flex flex-col gap-4">
         {faqItems.slice(3).map((item) => (
           <div key={item.id} className={`${item.bgColor} px-7 py-7 rounded-lg`}>
             <h3 className={`text-2xl font-semibold ${item.textColor}`}>
@@ -91,7 +107,7 @@ const Faq = () => {
             </p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 
