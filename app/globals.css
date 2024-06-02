@@ -83,14 +83,34 @@
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: gray;
+  color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dark-mode .slick-prev:before,
-.dark-mode .slick-next:before {
-  color: white; /* Color for dark mode */
+.dark-mode.slick-prev:before,
+.dark-mode.slick-next:before {
+  color: white; 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF5555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 
