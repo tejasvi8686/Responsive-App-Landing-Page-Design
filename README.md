@@ -13,7 +13,7 @@
 ## Images of The Portfolio Website:
 
 #### Home
-![Nextjs Creative Portfolio Website](https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/website%20images/Home-desktop.png)
+![Nextjs Creative Portfolio Website](https://github.com/tejasvi8686/Responsive-App-Landing-Page-Design/blob/main/screenshot/11.png)
 
 #### About
 ![Nextjs Creative Portfolio Website About Page](https://github.com/codebucks27/Nextjs-Creative-Portfolio-Starter-Code-Files/blob/main/website%20images/About-desktop-full.png)
