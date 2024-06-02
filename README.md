@@ -1,4 +1,4 @@
-# Next.js Creative Landing Page: Build Amazing Website with Next.js, TypeScript, Tailwind CSS and Framer Motion. 🔥
+# Landing Page: Build Amazing Website with Next.js, TypeScript, Tailwind CSS and Framer Motion. 🔥
 
 ![GitHub stars](https://img.shields.io/github/stars/tejasvi8686/Portfolio_project?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
 ![GitHub forks](https://img.shields.io/github/forks/tejasvi8686/Portfolio_project?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
