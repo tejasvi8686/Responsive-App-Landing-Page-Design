@@ -23,11 +23,11 @@ Built with the latest Next.js and TypeScript, this project replicates Zoom, a wi
 - Farmer Motion
 
 ## ✨ Features
-👉 Dark Mode: Implemented Dark Mode Features.
+👉 Dark Mode: Implemented dark mode features.
 
 👉 Responsive Design: Optimized for all devices.
 
-👉 Animation: with Farmer Motion.
+👉 Animation: Created with Framer Motion.
 
 
 
