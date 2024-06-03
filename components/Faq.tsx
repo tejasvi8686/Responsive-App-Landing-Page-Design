@@ -79,10 +79,10 @@ const Faq = () => {
         }} className="flex flex-col gap-4">
         {faqItems.slice(0, 3).map((item) => (
           <div key={item.id} className={`${item.bgColor} px-7 py-7 rounded-lg`}>
-            <h3 className={`text-2xl font-semibold ${item.textColor}`}>
+            <h3 className={`text-2xl font-clash-display font-semibold ${item.textColor}`}>
               {item.title}
             </h3>
-            <p className={`font-medium text-lg ${item.textColor}`}>
+            <p className={`font-medium font-clash-display text-lg ${item.textColor}`}>
               {item.content}
             </p>
           </div>
@@ -99,10 +99,10 @@ const Faq = () => {
         }} className="flex flex-col gap-4">
         {faqItems.slice(3).map((item) => (
           <div key={item.id} className={`${item.bgColor} px-7 py-7 rounded-lg`}>
-            <h3 className={`text-2xl font-semibold ${item.textColor}`}>
+            <h3 className={`text-2xl font-clash-display font-semibold ${item.textColor}`}>
               {item.title}
             </h3>
-            <p className={`font-medium text-lg ${item.textColor}`}>
+            <p className={`font-medium font-clash-display text-lg ${item.textColor}`}>
               {item.content}
             </p>
           </div>
@@ -115,10 +115,10 @@ const Faq = () => {
     <Slider dots={true} infinite={true} speed={500} slidesToShow={1} slidesToScroll={1}>
       {faqItems.map((item) => (
         <div key={item.id} className={`${item.bgColor} px-7 py-7 rounded-lg`}>
-          <h3 className={`text-2xl font-semibold ${item.textColor}`}>
+          <h3 className={`text-2xl font-clash-display font-semibold ${item.textColor}`}>
             {item.title}
           </h3>
-          <p className={`font-medium text-lg ${item.textColor}`}>
+          <p className={`font-medium font-clash-display text-lg ${item.textColor}`}>
             {item.content}
           </p>
         </div>
@@ -139,7 +139,7 @@ const Faq = () => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="text-lg font-medium text-[#ff5555]">FAQ</motion.h3>
+            }} className="text-lg font-medium font-clash-display text-[#ff5555]">FAQ</motion.h3>
             <motion.h1 initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
@@ -148,7 +148,7 @@ const Faq = () => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="font-bold sm:text-5xl text-2xl">
+            }} className="font-bold font-clash-display sm:text-5xl text-2xl">
               Frequently Asked <br /> Questions
             </motion.h1>
           </div>
