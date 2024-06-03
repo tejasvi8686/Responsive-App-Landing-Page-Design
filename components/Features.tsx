@@ -34,7 +34,7 @@ const Features = () => {
                 ease: "easeIn",
                 duration: 1,
               }}
-              className="text-lg font-medium text-[#ff5555]"
+              className="text-lg font-medium text-[#ff5555] font-clash-display"
             >
               FEATURES
             </motion.h3>
@@ -48,7 +48,7 @@ const Features = () => {
                 ease: "easeIn",
                 duration: 1,
               }}
-              className="sm:text-5xl text-3xl  font-bold"
+              className="sm:text-5xl text-3xl font-clash-display font-bold"
             >
               Uifry Premium
             </motion.h1>
@@ -85,7 +85,7 @@ const Features = () => {
                       ease: "easeIn",
                       duration: 1,
                     }}
-                    className="text-lg font-semibold text-black dark:text-white"
+                    className="text-lg font-semibold text-black dark:text-white font-clash-display"
                   >
                     {item.title}
                   </motion.span>
@@ -100,7 +100,7 @@ const Features = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
-                  className="text-sm font-medium text-gray-700 dark:text-white"
+                  className="text-sm font-medium text-gray-700 dark:text-white font-clash-display"
                 >
                   {item.description}
                 </motion.p>

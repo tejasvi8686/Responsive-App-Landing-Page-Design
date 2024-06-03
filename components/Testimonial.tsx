@@ -20,7 +20,7 @@ const Testimonials = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          className="text-lg font-bold"
+          className="text-lg font-semibold font-clash-display text-[#ff5555]"
         >
           TESTIMONIAL
         </motion.h3>
@@ -34,7 +34,7 @@ const Testimonials = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          className="sm:text-5xl text-3xl  font-bold"
+          className="sm:text-5xl text-3xl font-clash-display font-bold"
         >
           What Our Users <br /> Say About Us?
         </motion.h1>
@@ -61,7 +61,7 @@ const Testimonials = () => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="lg:text-[34px] text-[24px] font-semibold">
+            }} className="lg:text-[34px] text-[24px] font-clash-display font-semibold">
             The Best Financial Accounting App Ever!
           </motion.h3>
           <motion.p initial={{ x: -100, opacity: 0 }}
@@ -72,7 +72,7 @@ const Testimonials = () => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white">
+            }} className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white font-clash-display">
             “Arcu at dictum sapien, mollis. Vulputate sit id accumsan,
             ultricies. In ultrices malesuada elit mauris etiam odio. Duis
             tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus,
@@ -111,7 +111,7 @@ const Testimonials = () => {
               opacity: { duration: 1 },
               ease: "easeIn",
               duration: 1,
-            }} className="text-lg font-bold">Nicks Jonas</motion.span>
+            }} className="text-lg font-bold font-clash-display">Nicks Jonas</motion.span>
         </div>
       </div>
       <Image

@@ -45,7 +45,7 @@ const Common: React.FC<CommonProps> = ({
                 ease: "easeIn",
                 duration: 1,
               }}
-              className="text-lg font-medium text-[#ff5555]"
+              className="text-lg font-medium font-clash-display text-[#ff5555]"
             >
               {subtitle}
             </motion.h3>
@@ -59,7 +59,7 @@ const Common: React.FC<CommonProps> = ({
                 ease: "easeIn",
                 duration: 1,
               }}
-              className="sm:text-5xl text-3xl font-bold"
+              className="sm:text-5xl text-3xl font-clash-display font-bold"
             >
               {title}
             </motion.h1>
@@ -83,7 +83,7 @@ const Common: React.FC<CommonProps> = ({
               alt={iconAlt}
               loading="lazy"
             />
-            <span className="text-lg font-semibold">{iconText}</span>
+            <span className="text-lg font-clash-display font-semibold">{iconText}</span>
           </motion.div>
           <div>
             <motion.p
@@ -96,7 +96,7 @@ const Common: React.FC<CommonProps> = ({
                 ease: "easeIn",
                 duration: 1,
               }}
-              className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white"
+              className="sm:text-lg text-sm font-medium text-gray-700 dark:text-white font-clash-display"
             >
               {description}
             </motion.p>

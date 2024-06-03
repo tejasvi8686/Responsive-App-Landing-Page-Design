@@ -18,7 +18,7 @@ const Footer = () => {
               className="flex flex-row items-center space-x-2 rtl:space-x-reverse mb-4"
             >
               <Image src={Logo1} alt=" Logo" height={38} width={38} />
-              <span className="font-extrabold text-3xl">uifry</span>
+              <span className="font-extrabold text-3xl font-clash-display">uifry</span>
             </Link>
             <div className="flex flex-row items-center gap-3 mb-4">
               <Image
@@ -30,7 +30,7 @@ const Footer = () => {
               />
               <Link
                 href="mailto:Help@Frybix.com"
-                className="font-medium text-base"
+                className="font-medium text-base font-clash-display"
               >
                 Help@Frybix.com
               </Link>
@@ -43,14 +43,14 @@ const Footer = () => {
                 loading="lazy"
                 alt="call"
               />
-              <Link href="tel:+123445667889" className="font-medium text-base">
+              <Link href="tel:+123445667889" className="font-medium text-base font-clash-display">
                 +1 234 456 678 89
               </Link>
             </div>
           </div>
           {footerLinks.map((section, index) => (
             <div key={index} className="flex flex-col">
-              <h2 className="mb-4 text-lg font-semibold text-black uppercase dark:text-white leading-10">
+              <h2 className="mb-4 text-lg font-semibold text-black uppercase font-clash-display dark:text-white leading-10">
                 {section.title}
               </h2>
               <ul className="flex flex-col gap-4">
@@ -58,7 +58,7 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <Link
                       href={link.href}
-                      className="hover:underline font-medium text-base text-black dark:text-white leading-7"
+                      className="hover:underline font-medium text-base text-black dark:text-white leading-7 font-clash-display"
                     >
                       {link.text}
                     </Link>
@@ -67,17 +67,17 @@ const Footer = () => {
               </ul>
               {section.hasForm && (
                 <form className="mt-6 w-full">
-                  <label htmlFor="UserEmail" className="sr-only">
+                  <label htmlFor="UserEmail" className="sr-only font-clash-display">
                     Email
                   </label>
                   <div className="rounded-md border border-gray-100 p-2  sm:flex sm:items-center sm:gap-4">
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="w-full sm:text-sm bg-transparent p-3 sm:p-1 "
+                      className="w-full sm:text-sm bg-transparent p-3 sm:p-1 font-clash-display"
                     />
-                    <Button className="mt-1 w-full  bg-black hover:bg-gray-800 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555] rounded-md">
-                      Sign Up
+                    <Button className="mt-1 w-full  bg-black hover:bg-gray-800 px-6 py-3 text-sm font-medium tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0 dark:bg-[#FF5555] dark:hover:bg-[#be5555] rounded-md font-clash-display">
+                      Subscribe
                     </Button>
                   </div>
                 </form>
@@ -87,8 +87,8 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex sm:flex-row flex-col sm:items-center sm:justify-between sm:gap-0 gap-2">
-          <span className="text-sm text-center"> Copyright 2024 uifry.com all rights reserved</span>{" "}
-          <span className="text-sm text-black sm:text-center dark:text-white text-center">
+          <span className="text-sm text-center font-clash-display"> Copyright 2024 uifry.com all rights reserved</span>{" "}
+          <span className="text-sm text-black sm:text-center dark:text-white text-center font-clash-display">
           Crafted with passion by {" "}
             <Link className="font-bold" target="_blank" href="https://tejasviraj.vercel.app/">Tejasvi Raj</Link>
           </span>

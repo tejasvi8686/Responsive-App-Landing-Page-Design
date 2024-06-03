@@ -27,7 +27,7 @@ const Started = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="sm:text-5xl text-3xl text-white font-bold"
+                className="sm:text-5xl text-3xl text-white font-bold font-clash-display"
               >
                 Ready To Get Started ?
               </motion.h1>
@@ -41,7 +41,7 @@ const Started = () => {
                   ease: "easeIn",
                   duration: 1,
                 }}
-                className="text-white text-lg"
+                className="text-white text-lg font-clash-display" 
               >
                 Risus habitant leo egestas mauris diam eget morbi tempus
                 vulputate.
@@ -57,7 +57,7 @@ const Started = () => {
                   duration: 1,
                 }}
               >
-                <Button className="text-black border-0 bg-white hover:bg-slate-300 focus:ring-4 font-medium text-sm px-8 py-3 text-center  rounded-md mr-8 sm:w-[35%] w-[60%] cursor-pointer">
+                <Button className="text-black border-0 bg-white hover:bg-slate-300 focus:ring-4 font-medium text-sm px-8 py-3 text-center  rounded-md mr-8 sm:w-[35%] w-[60%] cursor-pointer font-clash-display">
                   Download App
                   <svg
                     className="w-5 h-5 ml-2 -mr-1"

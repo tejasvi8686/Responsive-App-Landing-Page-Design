@@ -63,7 +63,7 @@ const Hero = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+            className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white font-clash-display"
           >
             Make The Best Financial Decisions
           </motion.h1>
@@ -77,7 +77,7 @@ const Hero = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="max-w-2xl mb-6 text-[#717882] font-medium lg:mb-8 md:text-lg lg:text-xl dark:text-white"
+            className="max-w-2xl mb-6 text-[#717882] font-medium lg:mb-8 md:text-lg font-clash-display lg:text-xl dark:text-white"
           >
             Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet
             faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.
@@ -94,7 +94,7 @@ const Hero = () => {
             }}
             className="flex flex-row"
           >
-            <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-md mr-5">
+            <Button className="text-white border-0 bg-black hover:bg-gray-800 focus:ring-4 font-medium text-sm px-8 py-3 text-center dark:bg-[#FF5555] dark:hover:bg-[#be5555] dark:focus:ring-[#FF5555] rounded-md mr-5 font-clash-display">
               Get started
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
