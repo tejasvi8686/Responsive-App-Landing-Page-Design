@@ -1,4 +1,4 @@
-# Landing Page With Next.js 🔥
+# Landing Page With Next.js🔥
 
 
 ![GitHub stars](https://img.shields.io/github/stars/tejasvi8686/Responsive-App-Landing-Page-Design?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
